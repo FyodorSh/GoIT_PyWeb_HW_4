@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+    run:
+        ports:
+            - '3000:3000/tcp'
+            - '5000:5000/udp'
+        image: run
+    volumes:
+      - storage: storage
+
+volumes:
+  storage: null
